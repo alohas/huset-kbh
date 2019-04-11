@@ -136,7 +136,21 @@ h2 {
 .active {
   display: block;
 }
+.navbar-toggle {
+    width: 45px;
+    align-self: center;
+    cursor: pointer;
+    color: black;
+}
 
+.icon-bar {
+    height: 4px;
+    width: 80%;
+    background: black;
+    margin: 5px 0;
+    display: block;
+    border-radius: 2px;
+}
 
 @media only screen and (min-width : 768px) {
 
