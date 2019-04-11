@@ -13,6 +13,7 @@ footer {
     background-color: white;
 
 }
+
 header {
     background-color: white
 }
@@ -24,11 +25,13 @@ header {
 .sample {
     max-width: 90vw;
 }
+
 .picture {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -39,12 +42,12 @@ h2 {
     margin-top: 20px;
 }
 
-.article2 h1{
+.article2 h1 {
     font-size: 25px;
     color: black;
 }
 
-.social-icon img{
+.social-icon img {
     max-width: 2.7rem;
     padding: 1rem
 }
@@ -70,7 +73,7 @@ h2 {
     border-color: #dff2fd;
 }
 
- .collab {
+.collab {
     text-align: center;
 }
 
@@ -78,11 +81,13 @@ h2 {
     text-align: center;
     padding-bottom: 30px;
 }
+
 .newsletter h2 {
     margin-left: 0;
     padding-bottom: 20px;
     font-weight: 500;
 }
+
 .social-icons-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -92,34 +97,39 @@ h2 {
 
 
 .logo {
-	font-family: inherit;
-	font-size: 1.5em;
-	margin-left: 0em;
-  }
+    font-family: inherit;
+    font-size: 1.5em;
+    margin-left: 0em;
+}
 
 
 .navbar {
     font-size: 24px;
 }
+
 .menu {
     list-style-type: none;
 }
+
 .nav-links,
 .logo1 {
     text-decoration: none;
     color: black;
 }
+
 .menu li {
     text-align: center;
     margin: 15px auto;
     font-weight: 500;
 }
+
 .logo1 {
     display: inline-block;
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
 }
+
 .navbar-toggle {
     position: absolute;
     top: 10px;
@@ -128,58 +138,60 @@ h2 {
     color: black;
     font-size: 24px;
 }
+
 .menu {
     list-style-type: none;
     display: none;
 }
 
 .active {
-  display: block;
+    display: block;
 }
 
 
 @media only screen and (min-width : 768px) {
 
-	.wrap {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
+    .wrap {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 
 
     .sample {
-    max-width: 30vw;
-}
+        max-width: 30vw;
+    }
 
     footer dl {
-    float: none;
-    margin: 30px 0 50px;
-    text-align: center;
+        float: none;
+        margin: 30px 0 50px;
+        text-align: center;
     }
 
     .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "one-area two-area third-area";
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "one-area two-area third-area";
+    }
 
-.social-icons-footer {
-    grid-area: one-area;
-    padding-top: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
+    .social-icons-footer {
+        grid-area: one-area;
+        padding-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 
-.newsletter {
-    grid-area: two-area;
-    text-align: center;
-}
+    .newsletter {
+        grid-area: two-area;
+        text-align: center;
+    }
 
-  .collab {
-    grid-area: third-area;
-    text-align: center;
-    padding-top: 40px;
-}
+    .collab {
+        grid-area: third-area;
+        text-align: center;
+        padding-top: 40px;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -187,21 +199,26 @@ h2 {
         height: 70px;
         align-items: center;
     }
+
     .menu {
         display: flex;
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
     }
+
     .menu li {
         margin: 0;
     }
+
     .nav-links {
         margin-left: 40px;
     }
-   .navbar-toggle {
-       display: none;
+
+    .navbar-toggle {
+        display: none;
     }
+
     .logo:hover,
     .nav-links:hover {
         color: #dff2fd;
@@ -209,3 +226,21 @@ h2 {
 
 }
 
+
+/*----------------SIDE MENU----------------------*/
+
+.side-menu {
+    padding: 15px;
+}
+
+.side-menu a {
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+}
+
+.side-menu a:hover {
+    font-size: 20px;
+    text-decoration: underline;
+
+}
