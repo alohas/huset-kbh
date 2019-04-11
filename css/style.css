@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Avenir";
+    font-family: "Avenir", Verdana, sans-serif;
 }
 
 
 body {
     background-color: #dff2fd;
+    color: black;
 }
 
 footer {
@@ -235,12 +236,21 @@ h2 {
         display: none;
     }
 
+    .current-page{
+        color: #dff2fd;
+    }
+
+
     .logo:hover,
     .nav-links:hover {
         color: #dff2fd;
     }
 
 }
+
+nav.side-menu a.current-page{
+        text-decoration: underline;
+    }
 
 
 /*----------------SIDE MENU----------------------*/
@@ -249,14 +259,15 @@ h2 {
     padding: 15px;
 }
 
+
 .side-menu a {
+    padding: 2px;
     font-size: 19px;
     text-decoration: none;
     color: black;
 }
 
 .side-menu a:hover {
-    font-size: 20px;
     text-decoration: underline;
 
 }
