@@ -16,7 +16,8 @@ footer {
 }
 
 header {
-    background-color: white
+    background-color: white;
+    padding: 15px;
 }
 
 .logo {
