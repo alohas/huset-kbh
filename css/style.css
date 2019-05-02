@@ -4,14 +4,18 @@
     font-family: "Avenir", Verdana, sans-serif;
 }
 
+main {
+    padding: 15px;
+}
 
 body {
-    background-color: #dff2fd;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 footer {
     background-color: white;
+    padding: 15px;
 
 }
 
@@ -36,12 +40,22 @@ header {
 
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
+    font-size: 47px;
 }
 
 h2 {
-    margin-left: 5vw;
-    margin-top: 20px;
+    text-align: center;
+}
+
+#first {
+    text-align: left;
+    padding: 25px 0;
+}
+
+#second {
+    text-align: right;
+    padding: 25px 0 px;
 }
 
 .article2 h1 {
@@ -54,6 +68,12 @@ h2 {
     padding: 1rem
 }
 
+.more a {
+    text-decoration: none;
+}
+.more{
+    borde
+}
 
 .btn {
     padding-top: 10px;
@@ -68,7 +88,7 @@ h2 {
     font-weight: 600;
     cursor: pointer;
     border-color: black;
-    border-width:medium
+    border-width: medium
 }
 
 .btn:hover {
@@ -78,7 +98,10 @@ h2 {
 }
 
 .collab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+
 }
 
 .newsletter {
@@ -96,7 +119,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    padding-top: 15px;
 }
 
 
@@ -136,7 +158,7 @@ h2 {
 
 .navbar-toggle {
     position: absolute;
-    top: 24px;
+    top: 35px;
     right: 20px;
     cursor: pointer;
     color: black;
@@ -151,6 +173,7 @@ h2 {
 .active {
     display: block;
 }
+
 .navbar-toggle {
     width: 45px;
     align-self: center;
@@ -237,7 +260,7 @@ h2 {
         display: none;
     }
 
-    .current-page{
+    .current-page {
         color: #dff2fd;
     }
 
@@ -249,9 +272,9 @@ h2 {
 
 }
 
-nav.side-menu a.current-page{
-        text-decoration: underline;
-    }
+nav.side-menu a.current-page {
+    text-decoration: underline;
+}
 
 
 /*----------------SIDE MENU----------------------*/
