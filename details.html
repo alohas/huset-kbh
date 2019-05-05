@@ -127,6 +127,7 @@
         function showEvent(object) {
             console.log(object);
             document.querySelector(".title").textContent = object.title.rendered;
+            document.querySelector("title").textContent = object.title.rendered;
             document.querySelector("img.thumbnail").src = object._embedded["wp:featuredmedia"][0].source_url;
             document.querySelector(".event-date").textContent = "Date: " + object.event_date;
             document.querySelector("div.desc").innerHTML = object.content.rendered;

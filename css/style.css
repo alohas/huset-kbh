@@ -38,6 +38,7 @@ h1 {
 
 h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 
@@ -174,6 +175,12 @@ img.thumbnail {
     height: auto;
 }
 
+.bastard {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 15%;
+}
 
 .image-container {
     display: flex;
@@ -192,8 +199,14 @@ h4.date {
 
 }
 
-h4.event-date, h4.pice, h4.location{
+h4.event-date,
+h4.pice,
+h4.location {
     padding: 10px 0;
+}
+
+h4.contacts {
+    margin: 10px;
 }
 
 .previous {
@@ -220,10 +233,35 @@ h3.title {
 div.desc {
     margin: 15px 0;
 }
+
 p {
     margin: 10px 10px;
 }
 
+a.mail {
+    margin: 10px;
+    color: red;
+}
+
+h3.static-page {
+    margin-top: 40px;
+}
+
+em {
+    margin: 0 10px;
+    display: block;
+    font-size: 14px;
+}
+
+a.mini-link {
+    color: darkred;
+}
+
+img.huset {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
 
 
 
@@ -306,7 +344,7 @@ p {
     }
 
     .current-page {
-        color: #dff2fd;
+        color: red;
     }
 
 
