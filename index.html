@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>template</title>
+    <title>HUSET KBH: BASTARD CAFE</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -22,9 +22,7 @@
 
 
                 <ul class="menu" id="js-menu">
-                    <li><a href="#" class="nav-links">Home</a>
-                    </li>
-                    <li><a href="events.html" class="nav-links">Events</a>
+                    <li><a href="#" class="nav-links">Events</a>
                     </li>
                     <li><a href="about.html" class="nav-links">About Huset</a>
                     </li>
@@ -41,16 +39,14 @@
 
     <main>
         <h1>Bastard Cafe</h1>
-        <h2>Board games & coffee in Copenhagen</h2>
-        <p id="first">Bastard Café is a café for board games, card games, coffee and 'hygge' in Copenhagen.</p>
-        <p id="second">Bastard Café is for EVERYONE. It matters not if you know the rules of a billion games or none at all - friendly game gurus will be there to help you get started.</p>
+        <h2>Upcoming Events</h2>
+        <nav class="navcat"></nav>
 
-        <button class="more"><a href="events.html">Check out upcoming Events!</a></button>
-
+        <div class="event-list">
 
 
 
-
+        </div>
     </main>
     <footer>
         <div class="wrapper">
@@ -77,14 +73,35 @@
                 </div>
             </div>
             <div class="collab">
-                <div><img src="images/footer_1.jpg" alt="partner-logo"></div>
-                <div> <img src="images/footer_2.jpg" alt="partner-logo">
+                <div>
+                    <img src="images/footer_1.jpg" alt="partner-logo">
                 </div>
-                <div> <img src="images/footer_3.jpg" alt="partner-logo">
+                <div>
+                    <img src="images/footer_2.jpg" alt="partner-logo">
+                </div>
+                <div>
+                    <img src="images/footer_3.jpg" alt="partner-logo">
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <template>
+        <article class="event-box">
+            <h3 class="event_name"></h3>
+            <div class="image-container">
+                <img src="" alt="thumb" class="thumbnail">
+            </div>
+            <h4 class="date"></h4>
+            <h4 class="price"></h4>
+            <h4 class="location"></h4>
+            <div class="btn-container">
+                <a href="" class="detail-btn">Read More</a>
+            </div>
+        </article>
+    </template>
+
     <script src="js/script.js"></script>
 </body>
 

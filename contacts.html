@@ -28,7 +28,7 @@
                     </li>
                     <li><a href="bastard-cafe.html" class="nav-links">Bastard Cafe</a>
                     </li>
-                    <li><a href="contacts.html" class="nav-links">Contacts</a>
+                    <li><a href="#" class="nav-links">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -39,15 +39,8 @@
 
     <main>
         <h1>Bastard Cafe</h1>
-        <a href="index.html" class="previous">&laquo;Back</a>
-        <article class="event-content">
+        <article>
             <h3 class="title"></h3>
-            <div class="image-container"><img src="" alt="thumb" class="thumbnail"></div>
-            <div class="desc"></div>
-            <h4 class="event-date"></h4>
-            <h4 class="price"></h4>
-            <h4 class="location"></h4>
-
         </article>
 
 
@@ -112,32 +105,6 @@
                 current_page[i].classList.add("current-page");
             }
         }
-
-
-
-
-
-
-        const baseLink = "http://mediakutka.com/srotas/wp-json/wp/v2/event/";
-        const URLprms = new URLSearchParams(window.location.search);
-        const eventID = URLprms.get("eventID")
-        console.log(baseLink + eventID + "?_embed");
-        fetch(baseLink + eventID + "?_embed").then(e => e.json()).then(showEvent);
-
-        function showEvent(object) {
-            console.log(object);
-            document.querySelector(".title").textContent = object.title.rendered;
-            document.querySelector("img.thumbnail").src = object._embedded["wp:featuredmedia"][0].source_url;
-            document.querySelector(".event-date").textContent = "Date: " + object.event_date;
-            document.querySelector("div.desc").innerHTML = object.content.rendered;
-            document.querySelector("h4.price").textContent = "Price: " + object.price;
-            document.querySelector("h4.location").textContent = "Location: " + object.location;
-
-
-
-
-        }
-
     </script>
 </body>
 

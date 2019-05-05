@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </span>
+                <a href="index.html" class="logo1"><img src="images/logo.png" class="logo" alt="logo"></a>
+
+
+                <ul class="menu" id="js-menu">
+                    <li><a href="index.html" class="nav-links">Events</a>
+                    </li>
+                    <li><a href="#" class="nav-links">About Huset</a>
+                    </li>
+                    <li><a href="bastard-cafe.html" class="nav-links">Bastard Cafe</a>
+                    </li>
+                    <li><a href="contacts.html" class="nav-links">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <main>
+        <h1>Bastard Cafe</h1>
+        <article>
+            <h3 class="title"></h3>
+        </article>
+
+
+
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="social-icons-footer">
+                <div class="social-icon twitter">
+                    <a href="https://twitter.com/HusetKBH" target="_blank">
+                        <img src="images/twitter%20copy.png" alt="social-icon">
+                    </a>
+                </div>
+                <div class="social-icon facebook">
+                    <a href="https://www.facebook.com/Huset.Koebenhavn" target="_blank">
+                        <img src="images/facebook%20copy.png" alt="social-icon">
+                    </a>
+                </div>
+                <div class="social-icon instagram">
+                    <a href="https://instagram.com/husetkbh/" target="_blank">
+                        <img src="images/instagram%20copy.png" alt="social-icon">
+                    </a>
+                </div>
+                <div class="social-icon flickr">
+                    <a href="https://www.flickr.com/photos/135006755@N04/" target="_blank">
+                        <img src="images/flickr.png" alt="social-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="collab">
+                <div>
+                    <img src="images/footer_1.jpg" alt="partner-logo">
+                </div>
+                <div>
+                    <img src="images/footer_2.jpg" alt="partner-logo">
+                </div>
+                <div>
+                    <img src="images/footer_3.jpg" alt="partner-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function() {
+
+            mainNav.classList.toggle('active');
+        });
+
+
+
+        let current_page = document.getElementsByTagName("a")
+
+        for (i = 0; i < current_page.length; i++) {
+            //console.log(current_page[i].href)
+            var x = current_page[i].href.includes("#");
+            if (x) {
+                current_page[i].classList.add("current-page");
+            }
+        }
+    </script>
+</body>
+
+</html>
