@@ -126,7 +126,7 @@ h2 {
     width: 45px;
 }
 
-span.navbar-toggle:hover i.icon-bar{
+span.navbar-toggle:hover i.icon-bar {
     background-color: red;
 }
 
@@ -275,34 +275,35 @@ h6 {
     margin-bottom: 10px;
 }
 
-.navcat button{
-    display:list-item;
-    list-style-type: none;
-    margin-left: 10px;
-
-    margin-bottom: 10px;
-
-
+.navcat {
+    margin: 0 auto;
 }
 
-.navcat button{
+.navcat button {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.navcat button {
     padding: 10px;
     background-color: white;
     border: none;
     border-radius: 25px;
 }
 
-.navcat a{
+.navcat a {
     color: black;
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.navcat a:hover{
+.navcat a:hover {
     color: white;
 }
 
-.navcat button:hover{
+.navcat button:hover {
     background-color: black;
 }
 
@@ -314,88 +315,4 @@ h6 {
 
 
 
-@media only screen and (min-width : 768px) {
-
-    .wrap {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-
-    .sample {
-        max-width: 30vw;
-    }
-
-    footer dl {
-        float: none;
-        margin: 30px 0 50px;
-        text-align: center;
-    }
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "one-area two-area third-area";
-    }
-
-    .social-icons-footer {
-        grid-area: one-area;
-        padding-top: 40px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .newsletter {
-        grid-area: two-area;
-        text-align: center;
-    }
-
-    .collab {
-        grid-area: third-area;
-        text-align: center;
-        padding-top: 40px;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-
-    .menu {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .menu li {
-        margin: 0;
-    }
-
-    .nav-links {
-        margin-left: 40px;
-    }
-
-    .navbar-toggle {
-        display: none;
-    }
-
-    .current-page {
-        color: red;
-    }
-
-
-    .logo:hover,
-    .nav-links:hover {
-        color: #dff2fd;
-    }
-
-}
-
-nav.side-menu a.current-page {
-    text-decoration: underline;
-}
+@media only screen and (min-width : 768px) {}
