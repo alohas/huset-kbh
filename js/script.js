@@ -47,7 +47,7 @@ function show(data) {
         clone.querySelector("a").href = "details.html?eventID=" + object.id;
         clone.querySelector("h3.event_name").textContent = object.title.rendered;
         clone.querySelector("img.thumbnail").src = object._embedded["wp:featuredmedia"][0].source_url;
-        clone.querySelector("h4.date").textContent = "Date: " + object.event_date.slice(0, -3);
+        clone.querySelector("h4.date").textContent = object.event_date.slice(0, -3);
         //console.log(object.event_date)
 
         parent.appendChild(clone);
@@ -79,10 +79,12 @@ if (catID) {
 
 function buildCatMenu(data) {
     data.forEach(cat => {
+        const newBTN = document.createElement("button");
         const newA = document.createElement("a");
         newA.textContent = cat.name;
 
         newA.href = "?cat=" + cat.id;
-        catnav.appendChild(newA);
+        newBTN.appendChild(newA);
+        catnav.appendChild(newBTN);
     })
 }

@@ -59,11 +59,12 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .detail-btn:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .collab {
@@ -121,21 +122,18 @@ h2 {
     top: 35px;
     right: 20px;
     cursor: pointer;
-    color: black;
     font-size: 24px;
+    width: 45px;
 }
 
+span.navbar-toggle:hover i.icon-bar{
+    background-color: red;
+}
 
 .active {
     display: block;
 }
 
-.navbar-toggle {
-    width: 45px;
-    align-self: center;
-    cursor: pointer;
-    color: black;
-}
 
 .icon-bar {
     height: 4px;
@@ -146,6 +144,9 @@ h2 {
     border-radius: 2px;
 }
 
+.icon-bar:hover {
+    color: red;
+}
 
 .current-page {
     font-weight: bold;
@@ -185,7 +186,8 @@ img.thumbnail {
 .image-container {
     display: flex;
     justify-content: center;
-    margin: 25px 0;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .btn-container {
@@ -196,6 +198,7 @@ img.thumbnail {
 
 h4.date {
     padding: 10px;
+    text-align: center;
 
 }
 
@@ -265,6 +268,42 @@ img.huset {
 
 ul {
     margin: 0px 50px;
+}
+
+h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.navcat button{
+    display:list-item;
+    list-style-type: none;
+    margin-left: 10px;
+
+    margin-bottom: 10px;
+
+
+}
+
+.navcat button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+.navcat a{
+    color: black;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.navcat a:hover{
+    color: white;
+}
+
+.navcat button:hover{
+    background-color: black;
 }
 
 
