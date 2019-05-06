@@ -125,11 +125,11 @@
         fetch(baseLink + eventID + "?_embed").then(e => e.json()).then(showEvent);
 
         function showEvent(object) {
-            console.log(object);
+            //console.log(object);
             document.querySelector(".title").textContent = object.title.rendered;
             document.querySelector("title").textContent = object.title.rendered;
             document.querySelector("img.thumbnail").src = object._embedded["wp:featuredmedia"][0].source_url;
-            document.querySelector(".event-date").textContent = "Date: " + object.event_date;
+            document.querySelector(".event-date").textContent = "Date: " + object.event_date.substring(0, 16);
             document.querySelector("div.desc").innerHTML = object.content.rendered;
             document.querySelector("h4.price").textContent = "Price: " + object.price;
             document.querySelector("h4.location").textContent = "Location: " + object.location;

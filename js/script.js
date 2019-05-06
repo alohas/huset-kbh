@@ -40,15 +40,15 @@ function loadData(link) {
 
 function show(data) {
     data.forEach(object => {
-        console.log(object);
+        //console.log(object);
         //clone
         const clone = template.cloneNode(true);
         //populate
         clone.querySelector("a").href = "details.html?eventID=" + object.id;
         clone.querySelector("h3.event_name").textContent = object.title.rendered;
         clone.querySelector("img.thumbnail").src = object._embedded["wp:featuredmedia"][0].source_url;
-        clone.querySelector("h4.date").textContent = "Date: " + object.event_date;
-        console.log(object.event_date)
+        clone.querySelector("h4.date").textContent = "Date: " + object.event_date.slice(0, -3);
+        //console.log(object.event_date)
 
         parent.appendChild(clone);
 
