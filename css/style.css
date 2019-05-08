@@ -6,7 +6,7 @@
 
 main {
     padding: 15px 30px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 footer {
     background-color: white;
     padding: 15px;
-
 }
 
 header {
@@ -50,6 +49,9 @@ h2 {
 
 
 .detail-btn {
+    height: 20px;
+    width: 100px;
+    text-align: center;
     display: inline-block;
     padding: 10px 35px;
     border-radius: 25px;
@@ -81,14 +83,6 @@ h2 {
     text-align: center;
 }
 
-
-.logo {
-    font-family: inherit;
-    font-size: 1.5em;
-    margin-left: 0em;
-}
-
-
 .navbar {
     font-size: 24px;
 }
@@ -112,7 +106,6 @@ h2 {
 
 .logo1 {
     display: inline-block;
-    font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -163,6 +156,7 @@ article.event-box {
     border: 4px double #FFFFFF;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: grid;
 }
 
 h3.event_name {
@@ -186,6 +180,14 @@ img.thumbnail {
 .image-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     margin-bottom: 25px;
     margin-top: 10px;
 }
@@ -230,7 +232,7 @@ h4.contacts {
 
 h3.title {
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 div.desc {
@@ -266,7 +268,7 @@ img.huset {
     border-radius: 15%;
 }
 
-ul {
+.desc ul {
     margin: 0px 50px;
 }
 
@@ -277,6 +279,8 @@ h6 {
 
 .navcat {
     margin: 0 auto;
+
+    place-items: center;
 }
 
 .navcat button {
@@ -315,4 +319,273 @@ h6 {
 
 
 
-@media only screen and (min-width : 768px) {}
+@media only screen and (min-width : 768px) {
+
+    div.event-list {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        font-size: 30px;
+    }
+
+    .navcat button a {
+        font-size: 16px;
+    }
+
+    article.event-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas:
+            'h-area h-area'
+            'img-area desc-area'
+            'a-area desc-area'
+            'b-area desc-area'
+            'c-area desc-area'
+    }
+
+
+    h3.title {
+        margin-bottom: 20px;
+        font-size: 50px;
+        grid-area: h-area;
+    }
+
+    div.image-container2 {
+        grid-area: img-area;
+    }
+
+    div.desc {
+        grid-area: desc-area;
+        font-size: 20px;
+    }
+
+    h.event-date {
+        grid-area: a-area;
+        font-size: 20px;
+    }
+
+    h.location {
+        grid-area: b-area;
+        font-size: 20px;
+    }
+
+    h.price {
+        grid-area: c-area;
+        font-size: 20px;
+    }
+
+
+
+    .wrap {
+        padding-left: 1em;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "one-area two-area third-area";
+    }
+
+    .social-icons-footer {
+        grid-area: one-area;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    .newsletter {
+        grid-area: two-area;
+        text-align: center;
+    }
+
+    .collab {
+        grid-area: third-area;
+        align-content: center;
+        margin: 0 auto;
+        grid-gap: 10px;
+
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    em {
+        font-size: 16px;
+    }
+
+    p,
+    h4,
+    a.mail,
+    a.mini-link {
+        font-size: 20px;
+    }
+
+    h3.event_name {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width : 1024px) {
+
+    main {
+        margin: 0 40px;
+    }
+
+    div.event-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo1 {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    nav.navbar {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 4fr;
+        grid-template-areas:
+            'logo-area empty-area menu-area';
+        height: 90px;
+    }
+
+
+    a.logo1 {
+        grid-area: logo-area;
+    }
+
+    .menu li {
+        margin: auto;
+    }
+
+    a.nav-links:hover:not(.current-page) {
+        color: darkred;
+        font-weight: 300;
+    }
+
+    #js-menu {
+        grid-area: menu-area;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'item1-area item2-area item3-area item4-area';
+    }
+
+    .item1 {
+        grid-area: item1-area;
+
+    }
+
+    .item2 {
+        grid-area: item2-area;
+    }
+
+    .item3 {
+        grid-area: item3-area;
+    }
+
+    .item4 {
+        grid-area: item4-area;
+    }
+
+    h3.title {
+        font-size: 40px;
+    }
+}
+
+
+
+
+@media only screen and (min-width : 1440px) {
+
+    main {
+        margin: 0 100px;
+    }
+
+    h6 {
+        margin-left: 50px;
+    }
+
+    .navcat {
+        margin-left: 50px;
+    }
+
+    .event-list {
+        margin-top: 50px;
+    }
+
+    nav.navbar {
+        grid-template-columns: 1fr 1.8fr 4fr;
+    }
+
+    article.event-content {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas:
+            'h-area h-area'
+            'img-area a-area'
+            'img-area b-area'
+            'img-area c-area'
+            'desc-area desc-area'
+    }
+}
+
+@media only screen and (min-width : 1920px) {
+    nav.navbar {
+        grid-template-columns: 1fr 3fr 4fr;
+    }
+
+    main {
+        margin: 0px 180px;
+    }
+
+    .navcat button a {
+        font-size: 19px;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "one-area two-area third-area";
+    }
+
+    h3.title {
+        margin-top: 50px;
+    }
+
+    .previous {
+        margin-top: 35px;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+
+
+
+}

@@ -6,6 +6,95 @@
     <title>ABOUT BASTARD CAFE</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @media only screen and (min-width : 768px) {
+
+            main {
+                margin: 0 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+                grid-template-areas:
+                    'h1-area h1-area'
+                    'h2-area h2-area'
+                    'p1-area img1-area'
+                    'img2-area p2-area'
+                    'p3-area img3-area'
+                    'detail-area detail-area';
+            }
+
+            h1 {
+                grid-area: h1-area;
+            }
+
+            h2 {
+                grid-area: h2-area;
+            }
+
+            #p1 {
+                grid-area: p1-area;
+            }
+
+            #i1 {
+                grid-area: img1-area;
+            }
+
+            #p2 {
+                grid-area: p2-area;
+            }
+
+            #i2 {
+                grid-area: img2-area;
+            }
+
+            #p3 {
+                grid-area: p3-area;
+            }
+
+            #i3 {
+                grid-area: img3-area;
+            }
+
+            .detailsarea {
+                grid-area: detail-area;
+            }
+        }
+
+
+        @media only screen and (min-width : 1024px) {
+            main {
+                margin: 0 70px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 15px;
+                grid-template-areas:
+                    'h1-area h1-area h1-area'
+                    'h2-area h2-area h2-area'
+                    'p1-area p2-area p3-area'
+                    'img1-area img2-area img3-area'
+                    'detail-area detail-area detail-area';
+            }
+
+            #p1,
+            #p2,
+            #p3 {
+                margin: auto 0;
+            }
+        }
+
+        @media only screen and (min-width : 1024px) {
+            main {
+                margin: 0 100px;
+                grid-gap: 30px;
+            }
+        }
+
+        @media only screen and (min-width: 1920px) {
+            main {
+                margin: 0 340px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -22,13 +111,13 @@
 
 
                 <ul class="menu" id="js-menu">
-                    <li><a href="index.html" class="nav-links">Events</a>
+                    <li class="item1"><a href="index.html" class="nav-links">Events</a>
                     </li>
-                    <li><a href="about.html" class="nav-links">About Huset</a>
+                    <li class="item2"><a href="about.html" class="nav-links">About Huset</a>
                     </li>
-                    <li><a href="#" class="nav-links">Bastard Cafe</a>
+                    <li class="item3"><a href="#" class="nav-links">Bastard Café</a>
                     </li>
-                    <li><a href="contacts.html" class="nav-links">Contacts</a>
+                    <li class="item4"><a href="contacts.html" class="nav-links">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -40,25 +129,26 @@
     <main>
         <h1>Bastard Café</h1>
         <h2>board games, coffee and hygge!</h2>
-        <p>On the ground floor of Huset, you will find the popular board game café Bastard Café. Here you can play all kinds of board games and enjoy a nice creamy cup of coffee, a great micro brewed beer or get some goods for your tummy with the delicious fries and toast the café offers.</p>
-        <div class="image-container">
+        <p id="p1">On the ground floor of Huset, you will find the popular board game café Bastard Café. Here you can play all kinds of board games and enjoy a nice creamy cup of coffee, a great micro brewed beer or get some goods for your tummy with the delicious fries and toast the café offers.</p>
+        <div class="image-container" id="i1">
             <img class="bastard" src="images/coffeegame.jpg" alt="coffee">
         </div>
-        <p>Bastard Café has expanded with the basement. Here you can also enjoy all types of board games but you can also experience a bit more of a bar atmosphere and try out some of their amazing gin!</p>
-        <div class="image-container">
+        <p id="p2">Bastard Café has expanded with the basement. Here you can also enjoy all types of board games but you can also experience a bit more of a bar atmosphere and try out some of their amazing gin!</p>
+        <div class="image-container" id="i2">
             <img class="bastard" src="images/GamingRampage-photoBoJoergensen.jpg" alt="gr">
         </div>
-        <p>It dosen’t matter if you are an expert in games or only tried ludo. Here there is room for everbody. Bastard Café also have volunteer gaming gurus to help you with understanding the rules of their many gaming opportunities.</p>
-        <div class="image-container">
+        <p id="p3">It dosen’t matter if you are an expert in games or only tried ludo. Here there is room for everbody. Bastard Café also have volunteer gaming gurus to help you with understanding the rules of their many gaming opportunities.</p>
+        <div class="image-container" id="i3">
             <img class="bastard" src="images/paris-connection2.jpg" alt="paris">
         </div>
-        <p>You can also joins them for one of their fun theme nights. Bastard Café throws tournaments or social meetups where you can get to know new people and games.</p>
-        <h3 class="static-page">Opening hours:</h3>
-        <p>Monday-thursday: 12.00-00.00<br>
-            Friday-saturday: 12.00-02.00<br>
-            Sunday: 12.00-00.00</p>
-        <a class="mail" href="https://www.facebook.com/BastardCafe/" target="_blank" rel="noopener">Bastard Café on Facebook</a>
-
+        <div class="detailsarea">
+            <p>You can also joins them for one of their fun theme nights. Bastard Café throws tournaments or social meetups where you can get to know new people and games.</p>
+            <h3 class="static-page">Opening hours:</h3>
+            <p>Monday-thursday: 12.00-00.00<br>
+                Friday-saturday: 12.00-02.00<br>
+                Sunday: 12.00-00.00</p>
+            <a class="mail" href="https://www.facebook.com/BastardCafe/" target="_blank" rel="noopener">Bastard Café on Facebook</a>
+        </div>
 
     </main>
     <footer>
